@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+        /* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Product Grid Styles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Category Grid Styles */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.category {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-grid,
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid,
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>75 Days Clearance</h1>
+                <p>Up to 50% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="product1.jpg" alt="Product 1">
+                        <h3>Product 1</h3>
+                        <p>$19.99</p>
+                    </div>
+                    <div class="product">
+                        <img src="product2.jpg" alt="Product 2">
+                        <h3>Product 2</h3>
+                        <p>$29.99</p>
+                    </div>
+                    <div class="product">
+                        <img src="product3.jpg" alt="Product 3">
+                        <h3>Product 3</h3>
+                        <p>$14.99</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-products">
+            <div class="container">
+                <h2>Latest Products</h2>
+                <div class="product-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section class="featured-categories">
+            <div class="container">
+                <h2>Featured Categories</h2>
+                <div class="category-grid">
+                    <div class="category">
+                        <img src="category1.jpg" alt="Category 1">
+                        <h3>Category 1</h3>
+                    </div>
+                    <div class="category">
+                        <img src="category2.jpg" alt="Category 2">
+                        <h3>Category 2</h3>
+                    </div>
+                    <div class="category">
+                        <img src="category3.jpg" alt="Category 3">
+                        <h3>Category 3</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <div class="testimonial-slider">
+                    </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-col">
+                        <h3>About Us</h3>
+                        <p>...</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contact Us</h3>
+                        <p>...</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p>&copy; 2023 Your Company</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

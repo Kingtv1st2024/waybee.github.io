@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c0f1a;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 90%;
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: linear-gradient(135deg, #1a237e, #0c0f1a);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .profile-info img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .task-timer {
+            margin-top: 10px;
+            font-size: 1.2em;
+            background: #2b2f45;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .packages {
+            margin-top: 20px;
+        }
+
+        .package {
+            background: #1a1e30;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #1a237e;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .bottom-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+
+            .profile-info {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-info img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-info">
+            <img src="logo.jpg" alt="Profile Picture"> WAYBEE INVESTMENT    
+        </div>
+        <div class="task-timer">
+            <p>Deposit</p>
+            <div class="timer">
+                
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

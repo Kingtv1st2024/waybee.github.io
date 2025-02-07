@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d3d3d3;
+        }
+        .login-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background: #f5f5f5;
+        }
+        .input-group input {
+            border: none;
+            outline: none;
+            background: transparent;
+            flex: 1;
+            padding: 5px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            flex: 1;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-btn {
+            background: #b76e79;
+            color: white;
+        }
+        .register-btn {
+            background: black;
+            color: white;
+        }
+
+        .logo-site{
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo"><img src="logo.jpg" class="logo-site" alt=""> Waybee Investment</div>
+        <div class="input-group">
+            <span>+234</span>
+            <input type="text" placeholder="">
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Your password">
+        </div>
+        <div class="button-group">
+            <button class="login-btn">Login</button>
+           <a href="reg.html"><button class="register-btn">Register</button></a> 
+        </div>
+    </div>
+</body>
+</html>
